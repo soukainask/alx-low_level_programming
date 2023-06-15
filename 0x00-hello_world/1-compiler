@@ -1,3 +1,6 @@
 #!/bin/bash
-gcc -c $CFILE
+CFILE="main.c"
+OFILE="${CFILE%.c}.o"
+
+gcc -c "$CFILE" -o "$OFILE"
 
